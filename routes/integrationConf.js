@@ -14,8 +14,8 @@ const getIntegration = (req, res) => {
 				app_name: 'BreakTime',
 				app_description:
 					'This integration reminds people to take breaks from work to prevent fatigue and burnout, increasing productivity. It also sends motivational quotes from different authors.',
-				app_logo: 'http://127.0.0.1:3000/api/v1/relax',
-				app_url: 'http://127.0.0.1:3000',
+				app_logo: 'https://breaktime-brnd.onrender.com',
+				app_url: 'https://breaktime-brnd.onrender.com',
 				background_color: '#fff',
 			},
 			is_active: true,
@@ -44,7 +44,7 @@ const getIntegration = (req, res) => {
 			],
 			target_url:
 				'https://ping.telex.im/v1/webhooks/019515ec-1acb-7f4c-b6f0-15bfd922e663',
-			tick_url: 'http://127.0.0.1:3000/api/v1/relax',
+			tick_url: 'https://breaktime-brnd.onrender.com/api/v1/relax',
 		},
 	});
 };
