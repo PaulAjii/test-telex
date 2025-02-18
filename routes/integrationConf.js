@@ -19,6 +19,7 @@ const getIntegration = (req, res) => {
 				background_color: '#fff',
 			},
 			is_active: true,
+			integration_category: 'Human Resources & Payroll',
 			integration_type: 'interval',
 			key_features: [
 				'rests',
