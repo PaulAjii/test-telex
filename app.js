@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 	});
 });
 
-app.use('/api/v1', relaxRoute);
+app.use('/', relaxRoute);
 app.use('/', integrationRoute);
 
 app.listen(port, () =>

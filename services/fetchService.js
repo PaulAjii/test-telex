@@ -1,14 +1,14 @@
+import axios from 'axios';
+
 // Fetch Inspirational Quote
 export const fetchQuote = async () => {
-	const response = await fetch(
+	const { data } = await axios.get(
 		'https://api.realinspire.tech/v1/quotes/random'
 	);
 
-	if (!response.ok) {
+	if (!data) {
 		throw new Error('Failed to fetch quote');
 	}
 
-	const data = await response.json();
-
-	return { quote: data[0].content, author: data[0].author };
+	return { quote: data[0].content };
 };
