@@ -4,7 +4,8 @@ import { StatusCodes } from 'http-status-codes';
 const router = Router();
 
 const getIntegration = (req, res) => {
-	const baseUrl = `${req.protocol}://${req.get('host')}`;
+	const baseUrl = `${req.protocol}s://${req.get('host')}`;
+	console.log(baseUrl);
 	res.status(StatusCodes.OK).json({
 		data: {
 			date: {
