@@ -1,0 +1,22 @@
+{
+	"name": "breaktime",
+	"version": "1.0.0",
+	"main": "app.js",
+	"type": "module",
+	"scripts": {
+		"dev": "nodemon app.js",
+		"start": "node app.js"
+	},
+	"keywords": [],
+	"author": "Paul Ajijola",
+	"license": "MIT",
+	"description": "This app is a simple Express app that integrates with Telex to set reminders for breaks during work to prevent burnout and fatigue, hence, improving productivity.",
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"express": "^4.21.2",
+		"http-status-codes": "^2.3.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.9"
+	}
+}
