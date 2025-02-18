@@ -5,7 +5,6 @@ const router = Router();
 
 const getIntegration = (req, res) => {
 	const baseUrl = `${req.protocol}s://${req.get('host')}`;
-	console.log(baseUrl);
 	res.status(StatusCodes.OK).json({
 		data: {
 			date: {
@@ -18,7 +17,7 @@ const getIntegration = (req, res) => {
 					'This integration reminds people to take breaks from work to prevent fatigue and burnout, increasing productivity. It also sends motivational quotes from different authors.',
 				app_logo: 'https://breaktime-brnd.onrender.com',
 				app_url: `${baseUrl}`,
-				background_color: '#fff',
+				background_color: '#90ee90',
 			},
 			is_active: true,
 			integration_category: 'Human Resources & Payroll',
