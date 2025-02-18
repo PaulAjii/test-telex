@@ -41,7 +41,7 @@ const getIntegration = (req, res) => {
 					label: 'interval',
 					type: 'text',
 					required: true,
-					default: '* * * * *',
+					default: '30 * * * *',
 				},
 			],
 			target_url:
